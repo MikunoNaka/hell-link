@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="static/css/new.main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script>
+		function myFunction() {
+			var x = document.getElementById("topnavbar");
+			if (x.className === "navbar") {
+				x.className += " responsive";
+			} else {
+				x.className = "navbar";
+			}
+		} 
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>(beta)Hell Correspondence</title>
+	</head>
+	<body>
+		<div class="navbar" id="topnavbar">
+			<a href="/" class="logo" id="logo">
+				<img src="media/index.png" alt="Hell Girl anime version" width="80" height="80"></a>
+			<a href="javascript:void(0);" class="hamburger-icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i></a>
+			<a href="/en">More</a>
+		</div>
+
+
+		<div class="body" id="body">
+			<div class="rightflex">
+				<br>
+				<h1>Enter someone's name to send them to <strong>hell</strong>.</h1></span>
+				<div class="form" method="POST">
+					<input type="text" id="name" name="name">
+					<button type="button" id="send">Send</button>
+				</div>
+				<div class="subtext">
+					<h3 id="subtext1">
+					<strong class="big">Notice:</strong>
+					When you <strong>curse</strong> someone, there will be two holes that you dig...
+					</h3>
+					<br>
+					<h3 id="subtext2">
+						One is for the cursed person and the other one is for <strong class="big">yourself.
+					</h3>
+				</div>
+			</div>
+			
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		</div>
+		<div id="foot">
+		</div>
+	</body>
+</html>

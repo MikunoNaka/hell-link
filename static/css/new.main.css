@@ -1,0 +1,111 @@
+body {
+	background-color: #232627;
+}
+
+strong {
+	color: red;
+}
+
+.navbar {
+	background-color: #222526;
+	overflow: hidden;
+}
+
+.navbar a {
+	float: right;
+	display: block;
+	color: #9e00ff;
+	text-align: right;
+/*	padding: 30px 50px;*/
+	padding: 30px 8%;
+	text-decoration: none;
+	font-size: 24;
+}
+
+.navbar #logo {
+	float: left;
+	padding: 0px 0px;
+}
+
+.navbar .hamburger-icon {
+	display: none;
+}
+
+/*hamburger menu shit*/
+@media screen and (max-width: 481px) {
+	.navbar a:not(:first-child) {display: none;}
+	.navbar a.hamburger-icon {
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 481px) {
+	.navbar.responsive {position: relative;}
+	.navbar.responsive a.hamburger-icon {
+/*		display: none;*/
+		position: relative;
+		right: 0;
+		top: 0;
+		padding: 30px 8%;
+		float:right;
+	}
+	.navbar.responsive a {
+		float: right;
+		display: block;
+		text-align: center;
+		padding: 30px 8%;
+	}
+}
+
+/*Navbar is done*/
+.body {
+	background-image: url("HG.png");
+	background-repeat: no-repeat;
+	background-position: left top;
+	text-align: center;
+	margin-left: 4%;
+}
+
+.body h1, h3 {
+	color: #f0f0f0;
+	background-color: #23262766;
+	display: inline;
+	padding: 1px 1px;
+}
+
+.rightflex {
+	float: right; 
+	margin-right: 10%;
+}
+
+.form {
+	padding: 9%;
+}
+
+#send {
+	margin-left: 6%;
+	color: #000000;
+	background-color: #ff0057;
+	border: 1px solid #e30808;
+	border-radius: 8px;
+	padding: 1% 5%;
+	transition-duration: 0.4s;
+}
+
+#send:hover {
+	background-color: #ff0000;
+}
+
+#name {
+	color: #ff0000;
+}
+
+.big {
+	font-size: 20px;
+	padding: 4px 4px;
+}
+
+.subtext {
+	margin-top: 3%;
+}
