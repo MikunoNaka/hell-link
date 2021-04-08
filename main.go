@@ -16,12 +16,13 @@ func main() {
 	router.Use(gin.Logger())
 	router.LoadHTMLGlob("templates/*")
 
-	// css static routes
+	// static routes
 	router.Static("/css", "static/css")
 	router.Static("/old/css", "static/css/old")
-	// js static routes
-	/*router.Static("/scripts", "static/scripts")
-	router.Static("/media", "static/media")*/
+
+	router.Static("/media", "static/media")
+
+	//router.Static("/scripts", "static/scripts")
 
 	// serve classic themed pages
 	router.GET("/old", func (c *gin.Context) {
@@ -38,6 +39,11 @@ func main() {
 		// do something else plz
 		var name string = c.PostForm("name")
 		fmt.Println(name)
+	})
+
+	// serve new themed pages
+	router.GET("/", func (c *gin.Context) {
+		c.HTML(http.StatusOK, "index.html", nil)
 	})
 
 	router.Run(":" + port)
