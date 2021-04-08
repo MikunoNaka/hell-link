@@ -3,20 +3,62 @@ body {
 	height: 100vh;
 	margin: 0;
 	color: #FFFFFF;
+	text-align: center;
 }
 
 .navbar {
 	height: 3.5rem;
 	border-bottom: 1px solid pink;
 	margin-bottom: 2.5rem;
+	background-color: #222526;
+	overflow: hidden;
 }
 
 .root {
-	width: 100%;
-	height: 25rem;
+	width: 90%;
+	height: 70vh;
 	margin: auto;
 	background: url("/media/hell-girl-full.png");
 	background-repeat: no-repeat;
+}
+
+.content {
+	float: right;
+	margin-top: 10vh;
+}
+
+form {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	margin: 1.5rem auto;
+	width: 50%;
+}
+
+/*
+form input {
+	margin: 1rem 2rem;
+}
+*/
+
+input[type=text] {
+	height: 2rem;
+	box-sizing: border-box;
+}
+
+#submit-button {
+	height: 2rem;
+	width: 5rem;
+	background-color: #ff0057;
+	border: 1px solid #e30808;
+	border-radius: 8px;
+	transition-duration: 0.4s;
+	box-sizing: border-box;
+}
+
+#submit-button:hover {
+	background-color: #ff0000;
 }
 
 strong, em {
@@ -26,12 +68,20 @@ strong, em {
 em {
 	font-size: 2rem;
 }
-
-.content {
-	text-align: center;
+h1, h3, strong, em {
+	margin: 0.5rem 0;
+	display: inline;
+}
+h1, h3 {
+	background-color: #23262766;
 }
 
 
-
 @media only screen and (max-device-width: 480px) {
+	.content {
+		margin: auto;
+	}
+	form {
+		width: 100%;
+	}
 }
