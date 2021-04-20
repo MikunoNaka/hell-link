@@ -27,6 +27,10 @@ input[type=text] {
 	margin: 0;
 	box-sizing: border-box;
 	color: red;
+
+  border-radius: 3px;
+  border: none;
+  outline: none;
 }
 
 input[type=submit] {
@@ -39,4 +43,5 @@ input[type=submit] {
 
 input[type=submit]:hover {
 	background-color: #A0A8C8;
+  border: none;
 }

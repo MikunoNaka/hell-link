@@ -22,7 +22,8 @@ func main() {
 
 	router.Static("/media", "static/media")
 
-	//router.Static("/scripts", "static/scripts")
+	router.Static("/scripts", "static/scripts")
+	router.Static("/old/scripts", "static/scripts")
 
 	// serve classic themed pages
 	router.GET("/old", func (c *gin.Context) {

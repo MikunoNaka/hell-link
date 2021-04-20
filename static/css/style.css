@@ -12,6 +12,27 @@ body {
 	margin-bottom: 2.5rem;
 	background-color: #222526;
 	overflow: hidden;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar p,
+.navbar nav {
+  display: inline-block;
+  margin: auto 2rem;
+}
+
+.navbar p {
+  font-size: 2rem;
+}
+
+nav a {
+  color: pink;
+  text-decoration: none;
+  padding: 0.5rem;
 }
 
 .root {
@@ -45,6 +66,13 @@ form input {
 input[type=text] {
 	height: 2rem;
 	box-sizing: border-box;
+  outline: none;
+
+  color: #FF0000;
+}
+
+input[type=text]:hover {
+  outline-color: red;
 }
 
 #submit-button {
@@ -79,9 +107,20 @@ h1, h3 {
 
 @media only screen and (max-device-width: 480px) {
 	.content {
-		margin: auto;
+    margin: auto;
 	}
 	form {
-		width: 100%;
+    width: 100%;
 	}
+  .navbar p,
+  .navbar nav {
+    display: inline-block;
+    margin: auto 0.5rem;
+  }
+  nav a {
+    margin: 0;
+  }
+  .navbar p {
+    font-size: 2rem;
+  }
 }
